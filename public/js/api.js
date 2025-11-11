@@ -1,4 +1,4 @@
-// public/js/api.js - UPDATED for Tailwind CSS
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const button = document.getElementById('fetchDataButton');
@@ -45,11 +45,12 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Table Header using Tailwind classes
         htmlContent += '<thead><tr>';
-        // Header cells use indigo background, white text, and padding/alignment
-        htmlContent += '<th class="px-6 py-3 bg-indigo-600 text-left text-xs font-medium text-white uppercase tracking-wider rounded-tl-lg">ID</th>';
-        htmlContent += '<th class="px-6 py-3 bg-indigo-600 text-left text-xs font-medium text-white uppercase tracking-wider">Name</th>';
-        htmlContent += '<th class="px-6 py-3 bg-indigo-600 text-left text-xs font-medium text-white uppercase tracking-wider">Price</th>';
-        htmlContent += '<th class="px-6 py-3 bg-indigo-600 text-left text-xs font-medium text-white uppercase tracking-wider rounded-tr-lg">Category</th>';
+        // Header cells use blue background, white text, and padding/alignment
+        htmlContent += '<th class="px-6 py-3 bg-blue-600 text-left text-xs font-medium text-white uppercase tracking-wider rounded-tl-lg">ID</th>';
+        htmlContent += '<th class="px-6 py-3 bg-blue-600 text-left text-xs font-medium text-white uppercase tracking-wider">Name</th>';
+        htmlContent += '<th class="px-6 py-3 bg-blue-600 text-left text-xs font-medium text-white uppercase tracking-wider"></th>';
+        htmlContent += '<th class="px-6 py-3 bg-blue-600 text-left text-xs font-medium text-white uppercase tracking-wider">Price</th>';
+        htmlContent += '<th class="px-6 py-3 bg-blue-600 text-left text-xs font-medium text-white uppercase tracking-wider rounded-tr-lg">Category</th>';
         htmlContent += '</tr></thead>';
         
         // Table Body
@@ -61,9 +62,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const rowBg = index % 2 === 0 ? 'bg-white' : 'bg-gray-50';
             
             htmlContent += `
-                <tr class="${rowBg} hover:bg-indigo-100 transition duration-150 ease-in-out">
+                <tr class="${rowBg} hover:bg-blue-100 transition duration-150 ease-in-out">
                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">${item.id}</td>
                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">${item.name}</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700"><img class="size-32" src="${item.img}"/></td>
                     <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-red-600">$${item.price.toFixed(2)}</td>
                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">${item.category}</td>
                 </tr>

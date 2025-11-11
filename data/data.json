@@ -4,42 +4,49 @@
         "id": 1,
         "name": "Classic T-Shirt",
         "price": 25.99,
-        "category": "Apparel"
+        "category": "Apparel",
+        "img": "../img/Classic_T-shirt.jpg"
     },
     {
         "id": 2,
         "name": "Coffee Mug",
         "price": 9.50,
-        "category": "Homeware"
+        "category": "Homeware",
+        "img": "../img/Coffee_mug.webp"
     },
     {
         "id": 3,
         "name": "Laptop Backpack",
         "price": 59.99,
-        "category": "Accessories"
+        "category": "Accessories",
+        "img": "../img/Laptop_Backpack.jpg"
     },
     {
         "id": 4,
         "name": "Wireless Mouse",
         "price": 19.95,
-        "category": "Electronics"
+        "category": "Electronics",
+        "img": "../img/Wireless_Mouse.jpeg"
     },
     {
         "id": 5,
         "name": "Notebook Journal",
         "price": 12.00,
-        "category": "Stationery"
+        "category": "Stationery",
+        "img": "../img/Notebook_Journal.jpg"
     },
     {
         "id": 6,
         "name": "Running Shoes",
         "price": 85.00,
-        "category": "Apparel"
+        "category": "Apparel",
+        "img": "../img/Running_Shoes.jpeg"
     },
     {
         "id": 7,
         "name": "Desk Lamp",
         "price": 35.50,
-        "category": "Homeware"
+        "category": "Homeware",
+        "img": "../img/Desk_Lamp.webp"
     }
 ]
